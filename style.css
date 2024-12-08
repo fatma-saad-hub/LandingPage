@@ -1,0 +1,137 @@
+:root{
+  --header-height:50px;
+}
+*{
+  box-sizing:border-box;
+}
+body{
+    padding-top:var(--header-height);
+
+}
+#header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  position:fixed;
+  top:0;
+  height:var(--header-height);
+  background-color:rgba(52, 152, 219,0.5);
+  box-shadow:0 1px 1px grey;
+  padding:5px:
+}
+main{
+  padding:40px;
+}
+#header-img{
+  height:80%;
+}
+.responsive-img{
+  max-width:100%;
+  height:auto;
+}
+nav{
+}
+#nav-bar-list{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:400px;
+  list-style:none;
+}
+.nav-link{
+  text-decoration:none;
+  color:black;
+  font-size:1em;
+}
+.nav-link:hover{
+  font-size:1.1em;
+  font-weight:bold;
+  background-color:green;
+  padding:5px;
+  color:white;}
+
+  .nav-bar-item{
+    flex:1;
+  }
+}
+video{
+  max-width:100%;
+  width:80%.
+}
+section{
+  text-align:center;
+  margin-bottom:50px;
+}
+#block{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+
+}
+.block1{
+  display:block;
+  box-shadow: 0.5px 2px 8px 0.02px grey ;
+  width:49%;
+  
+}
+h2{
+  font-size:24px;
+  color:rgba(44, 62, 80,1.0);
+}
+.block2{
+  display:block;
+  box-shadow: 0.5px 2px 8px 0.02px grey ;
+  width:49%;
+  padding:10px;
+}
+p{
+  text-align:center;
+  font-size:16px;
+}
+.plans{
+  display:block;
+   box-shadow: 0.5px 2px 8px 0.02px grey ;
+  width:100%;
+  padding:10px;
+  
+}
+
+h1{
+  font-family:'geargia';
+  font-weight:900;
+  font-size:30px;
+  color:#3498db;
+}
+input[type="email"]{
+  width:60%;
+  height:30px;
+  background-color:orange;
+  color:white;
+  font-size:15px;
+  border:none;
+  border-radius:2px;
+}
+input[type="submit"]{
+  width:10%;
+  height:30px;
+  background-color:#3498db;
+  color:white;
+  font-size:15px;
+  border:none;
+  border-radius:2px;
+}
+@media only screen and (max-width:500px){
+  #header{
+    height:auto;
+        flex-direction:column;
+
+  }
+  #nav-bar-list{
+    flex-direction:column;
+  }
+  body{
+    padding-top:150px;
+  }
+}
